@@ -22,13 +22,16 @@ var bodyParser = require('body-parser')
 
 /**
  * import routes/index.js
+ * import routes/api.js
  */ 
 var index = require('./routes/index')
+var api = require('./routes/api')
 
 // parse application/json
 app.use(bodyParser.json());
 
 app.use('/', index)
+app.use('/api', api)
 
 app.listen(port, () => console.log(`Server running at port ${port}!`))
 
