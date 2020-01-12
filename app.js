@@ -20,6 +20,9 @@ const conn = mysql.createConnection(dbOptions)
 
 var bodyParser = require('body-parser')
 
+app.set('view engine', 'ejs')
+
+
 /**
  * import routes/index.js
  * import routes/api.js

@@ -1,9 +1,9 @@
 var express = require('express')
 var app = express()
 
-//show restful api
-app.get('/', function(req, res, next) {
-    res.send('restful api route created!')
+app.get('/', function(req, res) {
+	// render to views/index.ejs template file
+	res.render('api/items', {title: 'RESTful API routes'})
 })
 
 //show all items
