@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 11, 2020 at 04:59 PM
+-- Generation Time: Jan 13, 2020 at 03:09 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -48,7 +48,8 @@ INSERT INTO `items` (`id`, `name`, `qty`, `amount`) VALUES
 (6, 'indigo', 6, 2),
 (7, 'violet', 7, 1),
 (11, 'black', 1, 12),
-(12, 'brown', 99, 4);
+(12, 'brown', 99, 2),
+(17, 'maroon', 111, 12);
 
 --
 -- Indexes for dumped tables
@@ -68,7 +69,7 @@ ALTER TABLE `items`
 -- AUTO_INCREMENT for table `items`
 --
 ALTER TABLE `items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
